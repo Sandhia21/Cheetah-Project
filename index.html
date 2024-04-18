@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cheetah Airline</title>
+    <link
+      rel="shortcut icon"
+      href="assets/Cheetah Airlines Logo (1).png"
+      type="image/x-icon"
+    />
+
+    <!-- boxicon link -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section id="hero" class="h-screen">
+      <!-- Navbar -->
+      <nav
+        class="relative mx-auto container p-5 bg-transparent flex items-center justify-between md:block"
+      >
+        <div class="flex items-center justify-between text-nowrap">
+          <!-- logo -->
+          <div class="pt-2">
+            <img
+              src="assets/Cheetah Airlines Logo (1).png"
+              alt="logo"
+              class="h-10"
+            />
+          </div>
+          <!-- Menu Items -->
+          <div class="hidden md:flex md:justify-between">
+            <a href="#" class="hover:text-gray-500 padding-left">Home</a>
+            <a href="#" class="hover:text-gray-500 padding-left">About Us</a>
+            <a href="#" class="hover:text-gray-500 padding-left"
+              >Air Charter Services</a
+            >
+            <a href="#" class="hover:text-gray-500 padding-left"
+              >Air Cargo Chartering</a
+            >
+            <a href="#" class="hover:text-gray-500 padding-left hidden lg:block"
+              >Private Jet Chartering</a
+            >
+          </div>
+          <!-- Button -->
+          <a
+            href="#"
+            class="hidden md:block p-3 px-6 pt-2 text-white bg-primary rounded-full baseline hover:bg-gray-600"
+            >Book Now</a
+          >
+        </div>
+        <div class="">
+          <!-- Hamburger Icon -->
+          <button
+            id="menu-btn"
+            class="block hamburger md:hidden focus:outline-none"
+          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+
+          <div class="md:hidden">
+            <div
+              id="menu"
+              class="absolute hidden flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+            >
+              <a href="#" class="hover:text-gray-500">Home</a>
+              <a href="#" class="hover:text-gray-500">About Us</a>
+              <a href="#" class="hover:text-gray-500">Air Charter Services</a>
+              <a href="#" class="hover:text-gray-500">Air Cargo Chartering</a>
+              <a href="#" class="hover:text-gray-500">Private Jet Chartering</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="h-[80%] flex items-center justify-center">
+        <div
+          class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto md:space-y-0 h-full"
+        >
+          <!-- left item -->
+          <div class="flex flex-col space-y-12 md:w-1/2">
+            <h1 class="max-w-md text-4xl font-bold text-center md:text-left">
+              Book a private jet instantly
+            </h1>
+            <p class="text-black max-w-sm text-center md:text-left">
+              Cheetah Airline proudly raises the bar and exceeds the standard
+              for luxury and corporate private jet charter services. We pride
+              ourselves on offering a professional service.
+            </p>
+            <div class="flex justify-center md:justify-start">
+              <a
+                href="#"
+                class="p-3 px-6 pt-2 text-white bg-primary rounded-full baseline hover:bg-gray-600"
+                >Book Now</a
+              >
+            </div>
+          </div>
+          <!-- right item -->
+          <div class="md:w-1/2">
+            <img src="assets/plane-animate.png" alt="image" />
+          </div>
+        </div>
+      </section>
+    </section>
+    <section id="features" class="container mx-auto">
+      <div
+        class="flex flex-col-reverse md:flex-row items-center justify-between lg:gap-5 gap-10 md:mt-20 my-32"
+      >
+        <div
+          class="bg-cover bg-center z-[11] w-[50%] sm:w-full flex items-center justify-center flex-col rounded-[25px] before:rounded-[25px] text-white h-[360px] sm:h-[360px] max-w-full"
+          id="first-card"
+        >
+          <div
+            class="lg:p-20 p-10 h-[360px] md:h-[360px] flex items-start justify-center flex-col w-full"
+          >
+            <h4 id="heading" class="text-4xl">Private Jet Charter</h4>
+            <p id="para">
+              Trade crowded airports and wasted time for the ease, comfort, and
+              convenience of travel by private jet.
+            </p>
+          </div>
+        </div>
+        <div
+          class="bg-cover bg-center z-[12] w-[50%] sm:w-full rounded-[25px] before:rounded-[25px] text-white bg-opacity-70 text-xl"
+          id="second-card"
+        >
+          <div class="py-10 px-10">
+            <h5 class="mb-5 text-[18px]">
+              <span class="text-golden">#1 </span>Private Jet Charter
+            </h5>
+            <h4 class="mb-5">Find the Best Service For You</h4>
+            <ul id="items-list">
+              <li
+                class="cursor-pointer py-2 px-3 border-t-2 border-dotted list-item"
+              >
+                <i class="bx bx-left-arrow-alt text-golden"></i> Private Jet
+                Charter
+              </li>
+              <li
+                class="cursor-pointer py-2 px-3 border-t-2 border-dotted list-item"
+              >
+                Business Jet Charter
+              </li>
+              <li
+                class="cursor-pointer py-2 px-3 border-t-2 border-dotted list-item"
+              >
+                Private Helicopter
+              </li>
+              <li
+                class="cursor-pointer py-2 px-3 border-t-2 border-b-2 border-dotted list-item"
+              >
+                Air Ambulance
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="article"
+      class="bg-cover bg-center h-screen flex items-center justify-around md:justify-between flex-col md:flex-row px-20 mb-10"
+    >
+      <div class="">
+        <!-- About Cheetah -->
+        <div class="">
+          <h1
+            class="max-w-md text-4xl font-bold text-center md:text-left text-white pb-3"
+          >
+            Private Jet Charters save your time and give more comfort
+          </h1>
+          <p class="max-w-sm text-center text-white md:text-left">
+            Flynext is the only way to fully travel on your terms. Whether it's
+            accessing a remote destination or taking back control of
+            productivity and flight scheduling
+          </p>
+        </div>
+        <div class="p-3 bg-white rounded relative overflow-hidden w-full mt-10">
+          <div
+            class="bg-black h-[80%] w-[20px] rounded-full absolute left-[-10px] top-2"
+          ></div>
+          <div class="px-5 flex items-center justify-between">
+            <!-- left item -->
+            <div class="">
+              <h3 class="">Call for book an order</h3>
+              <a class="">8-800-10-500</a>
+            </div>
+            <!-- right item -->
+            <div class="flex items-center justify-center">
+              <a
+                href="#"
+                class="p-3 px-6 pt-2 text-white bg-primary rounded-full baseline hover:bg-gray-600 text-center"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="sidebar"
+        class="text-yellow-600 text-[8rem] hidden md:flex items-center justify-start mr-36"
+      >
+        <a href="#" class=""
+          ><i
+            class="bx bx-play border-yellow-500 border-4 rounded-full hover:text-gray-600 hover:border-gray-600"
+          ></i
+        ></a>
+      </div>
+    </section>
+
+    <!-- <section id="cards-section" class="container mx-auto my-5">
+      <div
+        class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 border-collapse"
+      >
+        <div
+          class="hover:shadow-xl px-3 border-2 lg:border-t-0 lg:border-l-0 border-dotted md:my-0 my-2"
+        >
+          <img src="assets/icons-cards.png" alt="" />
+          <h3>Luxury & Comfort Travel</h3>
+          <p>
+            As well as getting to fly to many different destinations as part of
+            their job, airplane pilots get big discounts on money
+          </p>
+        </div>
+        <div
+          class="hover:shadow-xl border-gray-600 border-dotted px-3 border-2 md:my-0 my-2"
+        >
+          <img src="assets/icons-cards.png" alt="" />
+          <h3>Luxury & Comfort Travel</h3>
+          <p>
+            As well as getting to fly to many different destinations as part of
+            their job, airplane pilots get big discounts on money
+          </p>
+        </div>
+        <div
+          class="hover:shadow-xl border-gray-600 border-dotted px-3 border-2 lg:border-t-2 lg:border-l-0 lg:border-b-2 lg:border-r-2 md:my-0 my-2"
+        >
+          <img src="assets/icons-cards.png" alt="" />
+          <h3>Luxury & Comfort Travel</h3>
+          <p>
+            As well as getting to fly to many different destinations as part of
+            their job, airplane pilots get big discounts on money
+          </p>
+        </div>
+        <div
+          class="hover:shadow-xl border-gray-600 border-dotted px-3 border-2 lg:border-r-0 md:my-0 my-2"
+        >
+          <img src="assets/icons-cards.png" alt="" />
+          <h3>Luxury & Comfort Travel</h3>
+          <p>
+            As well as getting to fly to many different destinations as part of
+            their job, airplane pilots get big discounts on money
+          </p>
+        </div>
+        <div
+          class="hover:shadow-xl border-gray-600 border-dotted px-3 border-2 lg:border-t-0 lg:border-l-2 md:my-0 my-2"
+        >
+          <img src="assets/icons-cards.png" alt="" />
+          <h3>Luxury & Comfort Travel</h3>
+          <p>
+            As well as getting to fly to many different destinations as part of
+            their job, airplane pilots get big discounts on money
+          </p>
+        </div>
+        <div
+          class="hover:shadow-xl border-gray-600 border-dotted px-3 lg:border-l-0 border-2 md:my-0 my-2"
+        >
+          <img src="assets/icons-cards.png" alt="" />
+          <h3>Luxury & Comfort Travel</h3>
+          <p>
+            As well as getting to fly to many different destinations as part of
+            their job, airplane pilots get big discounts on money
+          </p>
+        </div>
+      </div>
+    </section> -->
+
+    <section id="flight-book" class="container mx-auto">
+      <div
+        class="bg-black bg-cover bg-center text-center rounded-lg text-white p-20"
+      >
+        <h1 class="text-4xl py-2">Book A Personal Flight</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 py-2">
+          <div class="text-left px-1">
+            <p>From</p>
+            <div
+              class="flex items-center justify-between border-2 border-yellow-400 relative rounded px-2"
+            >
+              <i class="bx bxs-plane-alt"></i>
+              <p>Dhaka</p>
+              <ul class="hidden absolute">
+                <li>Dhaka</li>
+                <li>London</li>
+              </ul>
+              <!-- icon -->
+              <i class="bx bxs-chevron-down"></i>
+            </div>
+          </div>
+          <div class="text-left px-1">
+            <p>To</p>
+            <div
+              class="flex items-center justify-between border-2 border-yellow-400 relative rounded px-2"
+            >
+              <i class="bx bxs-plane-alt"></i>
+              <p>London</p>
+              <ul class="hidden absolute">
+                <li>Dhaka</li>
+                <li>London</li>
+              </ul>
+              <!-- icon -->
+              <i class="bx bxs-chevron-down"></i>
+            </div>
+          </div>
+          <div class="text-left px-1">
+            <p>Date</p>
+            <div
+              class="flex items-center justify-between border-2 border-yellow-400 relative rounded px-2"
+            >
+              <i class="bx bxs-plane-alt"></i>
+              <p>25/12/2024</p>
+              <ul class="hidden absolute">
+                <li>25/05/2024</li>
+                <li>23/06/2024</li>
+              </ul>
+              <!-- icon -->
+              <i class="bx bxs-chevron-down"></i>
+            </div>
+          </div>
+          <div class="text-left px-1">
+            <p>Passenger</p>
+            <div
+              class="flex items-center justify-between border-2 border-yellow-400 relative rounded px-2"
+            >
+              <i class="bx bx-minus cursor-pointer"></i>
+              <p>0</p>
+              <!-- icon -->
+              <i class="bx bx-plus cursor-pointer"></i>
+            </div>
+          </div>
+        </div>
+        <div class="my-5">
+          <a
+            href="#"
+            class="p-3 px-6 pt-2 text-white bg-primary rounded-full hover:bg-gray-600"
+            >Book Now</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="swiper-section"
+      class="container mx-auto my-10 h-[100vh] w-full relative flex items-center justify-center flex-col"
+    >
+      <h1 class="flex self-start text-4xl font-bold">Luxury Deals For You</h1>
+      <!-- Swiper -->
+      <div class="h-full w-full mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide flex items-center justify-center">
+            <div
+              class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            >
+              <a href="#">
+                <img
+                  class="rounded-t-lg h-[250px] w-full object-cover"
+                  src="assets/plane-img (1).jpg"
+                  alt=""
+                />
+              </a>
+              <div class="p-5">
+                <a href="#">
+                  <h5
+                    class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white hover:text-yellow-200"
+                  >
+                    Private Helicopter
+                  </h5>
+                </a>
+                <p class="mb-3 font-light text-gray-700 dark:text-gray-400">
+                  Charter a A500
+                </p>
+                <div
+                  class="flex items-center justify-between font-light border-b-2 border-gray-500 border-dotted py-3 my-5"
+                >
+                  <span>8 - 14 Seats</span>
+                  <span>Price: $9,000/ hr</span>
+                </div>
+                <div class="">
+                  <i class="bx bxs-plane bx-rotate-90"></i>
+                  <a href="#" class="hover:text-yellow-300 duration-300"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide flex items-center justify-center">
+            <div
+              class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            >
+              <a href="#">
+                <img
+                  class="rounded-t-lg h-[250px] w-full object-cover"
+                  src="assets/plane-img (1).jpg"
+                  alt=""
+                />
+              </a>
+              <div class="p-5">
+                <a href="#">
+                  <h5
+                    class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white hover:text-yellow-200"
+                  >
+                    Private Helicopter 2
+                  </h5>
+                </a>
+                <p class="mb-3 font-light text-gray-700 dark:text-gray-400">
+                  Charter a A500
+                </p>
+                <div
+                  class="flex items-center justify-between font-light border-b-2 border-gray-500 border-dotted py-3 my-5"
+                >
+                  <span>8 - 14 Seats</span>
+                  <span>Price: $9,000/ hr</span>
+                </div>
+                <div class="">
+                  <i class="bx bxs-plane bx-rotate-90"></i>
+                  <a href="#" class="hover:text-yellow-300 duration-300"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide flex items-center justify-center">
+            <div
+              class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            >
+              <a href="#">
+                <img
+                  class="rounded-t-lg h-[250px] w-full object-cover"
+                  src="assets/plane-img (1).jpg"
+                  alt=""
+                />
+              </a>
+              <div class="p-5">
+                <a href="#">
+                  <h5
+                    class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white hover:text-yellow-200"
+                  >
+                    Private Helicopter 3
+                  </h5>
+                </a>
+                <p class="mb-3 font-light text-gray-700 dark:text-gray-400">
+                  Charter a A500
+                </p>
+                <div
+                  class="flex items-center justify-between font-light border-b-2 border-gray-500 border-dotted py-3 my-5"
+                >
+                  <span>8 - 14 Seats</span>
+                  <span>Price: $9,000/ hr</span>
+                </div>
+                <div class="">
+                  <i class="bx bxs-plane bx-rotate-90"></i>
+                  <a href="#" class="hover:text-yellow-300 duration-300"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide flex items-center justify-center">
+            <div
+              class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            >
+              <a href="#">
+                <img
+                  class="rounded-t-lg h-[250px] w-full object-cover"
+                  src="assets/plane-img (1).jpg"
+                  alt=""
+                />
+              </a>
+              <div class="p-5">
+                <a href="#">
+                  <h5
+                    class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white hover:text-yellow-200"
+                  >
+                    Private Helicopter 4
+                  </h5>
+                </a>
+                <p class="mb-3 font-light text-gray-700 dark:text-gray-400">
+                  Charter a A500
+                </p>
+                <div
+                  class="flex items-center justify-between font-light border-b-2 border-gray-500 border-dotted py-3 my-5"
+                >
+                  <span>8 - 14 Seats</span>
+                  <span>Price: $9,000/ hr</span>
+                </div>
+                <div class="">
+                  <i class="bx bxs-plane bx-rotate-90"></i>
+                  <a href="#" class="hover:text-yellow-300 duration-300"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide flex items-center justify-center">
+            <div
+              class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            >
+              <a href="#">
+                <img
+                  class="rounded-t-lg h-[250px] w-full object-cover"
+                  src="assets/plane-img (1).jpg"
+                  alt=""
+                />
+              </a>
+              <div class="p-5">
+                <a href="#">
+                  <h5
+                    class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white hover:text-yellow-200"
+                  >
+                    Private Helicopter 5
+                  </h5>
+                </a>
+                <p class="mb-3 font-light text-gray-700 dark:text-gray-400">
+                  Charter a A500
+                </p>
+                <div
+                  class="flex items-center justify-between font-light border-b-2 border-gray-500 border-dotted py-3 my-5"
+                >
+                  <span>8 - 14 Seats</span>
+                  <span>Price: $9,000/ hr</span>
+                </div>
+                <div class="">
+                  <i class="bx bxs-plane bx-rotate-90"></i>
+                  <a href="#" class="hover:text-yellow-300 duration-300"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="swiper-button-next absolute lg:left-[unset] lg:right-0 lg:top-0 text-yellow-500"
+        ></div>
+        <div
+          class="swiper-button-prev absolute lg:left-[unset] lg:right-[50px] lg:top-0 text-yellow-500"
+        ></div>
+        <div class="swiper-pagination absolute bottom-30-px"></div>
+      </div>
+    </section>
+
+    <footer
+      class="h-full bg-black lg:py-[125px] text-white flex flex-col lg:gap-24 gap-5 lg:px-14 px-6 lg:items-center lg:flex-row lg:justify-around lg:h-screen"
+    >
+      <div class="flex flex-col md:items-center items-start gap-8">
+        <div>
+          <img class="h-[100px]" src="assets/Cheetah Airlines Logo (1).png" />
+        </div>
+        <div>
+          <p class="text-center text-xl text-[#8E8E8E] md:text-2xl font-normal">
+            We pride ourselves on offering a professional service.
+          </p>
+        </div>
+        <ul class="flex flex-row gap-[14px] text-4xl">
+          <li>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="bx bxl-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="flex flex-col justify-between gap-24 md:flex-row">
+        <div class="flex flex-col text-[#D9D9D9] gap-8 text-nowrap">
+          <h4 class="font-bold">Company</h4>
+          <ul class="flex flex-col gap-8">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="flex flex-col text-[#D9D9D9] gap-8 text-nowrap">
+          <h4 class="font-bold">Quick Links</h4>
+          <ul class="flex flex-col gap-8">
+            <li><a href="http://">Share Location</a></li>
+            <li><a href="http://">Orders Tracking</a></li>
+            <li><a href="http://">Size Guide</a></li>
+            <li><a href="http://">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="flex flex-col text-[#D9D9D9] gap-8 text-nowrap">
+          <h4 class="font-bold">Legal</h4>
+          <ul class="flex flex-col gap-8">
+            <li><a href="#">Terms & conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <div class="my-[100px]"></div> -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        cssMode: true,
+        loop: true,
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          // when window width is >= 320px
+          480: {
+            slidesPerView: 1,
+          },
+          // when window width is >= 480px
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          // when window width is >= 640px
+          976: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1440: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+    </script>
+
+    <!-- js link -->
+    <script src="js/index.js"></script>
+  </body>
+</html>

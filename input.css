@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Navbar */
+.padding-left {
+  padding-left: 20px;
+}
+/* Hamburger Menu */
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: #000;
+  border-radius: 2px;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: yellow !important;
+}
+
+#hero {
+  background-image: url("../assets/bg-hero (2).jpg");
+}
+
+#first-card {
+  background-image: url("../assets/plane-img (1).jpg");
+  position: relative;
+  z-index: 1;
+}
+#second-card {
+  background-image: url("../assets/plane-img (2).jpg");
+}
+
+#first-card,
+#second-card,
+#article {
+  position: relative;
+  z-index: 1;
+}
+#first-card::before,
+#second-card::before,
+#article::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(205, 210, 82, 0.279);
+  z-index: -1;
+}
+
+#article {
+  background-image: url("../assets/bg-article.png");
+}
+
+#article::before {
+  background-color: #0000007c;
+}
+
+
+.bottom-30-px{
+  bottom: -40px !important;
+}  
+
+/* @media screen and (max-width:1024px) {
+  .bottom-30-px{
+    bottom: -40px !important;
+  }  
+}
+
+@media screen and (max-width:768px) {
+  .bottom-30-px{
+    bottom: -40px !important;
+  }  
+}
+
+
+@media screen and (max-width:486px) {
+  .bottom-30-px{
+    bottom: -30px !important;
+  }  
+} */
